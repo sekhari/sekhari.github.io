@@ -428,6 +428,9 @@ textarea.form-control, textarea.form-control:focus {
   }
 }
 
+#oo {
+  margin : -20px !important;
+}
 
 /* ============================================================================= 
 4. Subpages changer
@@ -1816,7 +1819,18 @@ ul.social-links li:last-child a {
 }
 /* /Tags Block */
 
+ul2 {
+  list-style: none; /* Remove default bullets */
+}
 
+ul2 li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #ff724c; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */ 
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: 3em; /* Also needed for space (tweak if needed) */
+}
 
 
 /* ============================================================================= 

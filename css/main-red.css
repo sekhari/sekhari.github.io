@@ -57,7 +57,7 @@ body {
 }
 
 a {
-  color: #ff724c;
+  color: #8B0000;
   text-decoration: none;
   outline: none;
   -webkit-transition: all 0.3s ease-in-out;
@@ -130,7 +130,7 @@ input[type=submit], input[type=button], button, a.button {
   line-height: 1.2;
   border: 0;
   outline: 0;
-  border: 2px solid #ff724c;
+  border: 2px solid #8B0000;
   color: #222;
   text-shadow: none;
   background: none;
@@ -143,7 +143,7 @@ input[type=submit], input[type=button], button, a.button {
 
 input[type=submit]:hover, input[type=submit]:focus, input[type=button]:focus, button:hover, button:focus, a.button:hover, a.button:focus {
   color: #fff;
-  background-color: #ff724c;
+  background-color: #8B0000;
 }
 /* /Buttons */
 
@@ -153,14 +153,14 @@ input[type=submit]:hover, input[type=submit]:focus, input[type=button]:focus, bu
 }
 
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-  background-color: #ff724c;
+  background-color: #8B0000;
   opacity: 1;
   border-radius: 0;
 }
 
 .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
 .mCSB_scrollTools .mCSB_dragger:focus .mCSB_dragger_bar {
-  background-color: #ff724c;
+  background-color: #8B0000;
   opacity: 1;
 }
 
@@ -212,7 +212,7 @@ textarea.form-control, textarea.form-control:focus {
   left: 50%;
   right: 50%;
   bottom: 0;
-  background: #ff724c;
+  background: #8B0000;
   height: 2px;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
@@ -240,7 +240,7 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 .form-control:focus + .form-control-border + .form-control-icon {
-  color: #ff724c;
+  color: #8B0000;
 }
 
 /* Placeholders */
@@ -301,8 +301,8 @@ textarea.form-control, textarea.form-control:focus {
   background: transparent;
   width: 40px;
   height: 40px;
-  border-top: 2px solid #ff724c;
-  border-left: 2px solid #ff724c;
+  border-top: 2px solid #8B0000;
+  border-left: 2px solid #8B0000;
   left: 0;
   top: 0;
   z-index: 0;
@@ -314,8 +314,8 @@ textarea.form-control, textarea.form-control:focus {
   background: transparent;
   width: 40px;
   height: 40px;
-  border-bottom: 2px solid #ff724c;
-  border-right: 2px solid #ff724c;
+  border-bottom: 2px solid #8B0000;
+  border-right: 2px solid #8B0000;
   right: 0;
   bottom: 0;
   z-index: 0;
@@ -327,8 +327,8 @@ textarea.form-control, textarea.form-control:focus {
   background: transparent;
   width: 60px;
   height: 60px;
-  border-bottom: 2px solid #ff724c;
-  border-right: 2px solid #ff724c;
+  border-bottom: 2px solid #8B0000;
+  border-right: 2px solid #8B0000;
   right: 0;
   bottom: 0;
   z-index: 0;
@@ -340,8 +340,8 @@ textarea.form-control, textarea.form-control:focus {
   background: transparent;
   width: 110px;
   height: 110px;
-  border-top: 3px solid #ff724c;
-  border-left: 3px solid #ff724c;
+  border-top: 3px solid #8B0000;
+  border-left: 3px solid #8B0000;
   left: 20px;
   top: 10px;
   z-index: 0;
@@ -381,7 +381,7 @@ textarea.form-control, textarea.form-control:focus {
   display: inline-block;
   position: absolute;
   top: 0;
-  background-color: #ff724c;
+  background-color: #8B0000;
   border-radius: 100%;
   -webkit-animation: bounce 2.0s infinite ease-in-out;
   animation: bounce 2.0s infinite ease-in-out;
@@ -580,7 +580,7 @@ textarea.form-control, textarea.form-control:focus {
   position: fixed;
   width: 150px;
   height: 100%;
-  background-color: #ff724c;
+  background-color: #8B0000;
   overflow: auto;
   -webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.2);
   -moz-box-shadow: 0 1px 10px rgba(0,0,0,0.2);
@@ -656,7 +656,7 @@ ul.social-links li a {
 
 ul.social-links li a:hover {
   color: #fff;
-  background-color: #ff724c;
+  background-color: #8B0000;
   border-color: transparent;
 }
 
@@ -683,7 +683,7 @@ ul.social-links li:last-child a {
 }
 
 .menu-toggle i {
-  color: #ff724c;
+  color: #8B0000;
   font-size: 21px;
   line-height: 50px;
 }
@@ -756,7 +756,7 @@ ul.social-links li:last-child a {
   width: 0;
   height: 100%;
   margin: 0 auto;
-  background-color: #ff724c;
+  background-color: #8B0000;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -854,7 +854,7 @@ ul.social-links li:last-child a {
       right: 0;
       bottom: 0;
       margin: 0 auto;
-      background-color: #ff724c;
+      background-color: #8B0000;
       height: 2px;
       -webkit-transition: width 0.3s ease-in-out;
       -moz-transition: width 0.3s ease-in-out;
@@ -865,14 +865,14 @@ ul.social-links li:last-child a {
 
   .layout-menu-top .site-main-menu li a:hover:after,
   .layout-menu-bottom .site-main-menu li a:hover:after {
-    background-color: #ff724c;
+    background-color: #8B0000;
     width: 100%;
     height: 2px;
   }
 
   .layout-menu-top .site-main-menu li.active a:after,
   .layout-menu-bottom .site-main-menu li.active a:after {
-    background-color: #ff724c;
+    background-color: #8B0000;
     width: 100%;
     height: 2px;
   }
@@ -925,7 +925,7 @@ ul.social-links li:last-child a {
   position: relative;
   margin: 0;
   color: #fff;
-  background-color: #ff724c;
+  background-color: #8B0000;
   padding: 0 10px;
   font-size: 14px;
   font-weight: 200;
@@ -948,7 +948,7 @@ ul.social-links li:last-child a {
   height: 100%;
   left: -10px;
   bottom: 0;
-  background-color: #ff724c;
+  background-color: #8B0000;
 }
 
 
@@ -983,7 +983,7 @@ ul.social-links li:last-child a {
 }
 
 .home-page-block h2 {
-  color: #ff724c;
+  color: #8B0000;
   text-align: center;
   font-size: 70px;
   margin: 0;
@@ -1038,7 +1038,7 @@ ul.social-links li:last-child a {
     width: 100%;
     height: 2px;
     margin-top: -3px;
-    background-color: #ff724c;
+    background-color: #8B0000;
 }
 
 .info-list li .value {
@@ -1060,7 +1060,7 @@ ul.social-links li:last-child a {
 
 .service-icon {
   font-size: 60px;
-  color: #ff724c;
+  color: #8B0000;
   margin: 5px 0 18px;
 }
 /* /Services */
@@ -1116,7 +1116,7 @@ ul.social-links li:last-child a {
   font-weight: 300;
   display: block;
   margin: 10px 0;
-  color: #ff724c;
+  color: #8B0000;
 }
 /* /Fun Facts */
 
@@ -1231,7 +1231,7 @@ ul.social-links li:last-child a {
   font-weight: 300;
   line-height: 1.1em;
   margin: 0 0 3px;
-  background-color: #ff724c;
+  background-color: #8B0000;
   padding: 5px 8px 5px 20px;
   margin-left: -20px;
 }
@@ -1246,8 +1246,8 @@ ul.social-links li:last-child a {
   height: 26px;
   width: 26px;
   text-align: center;
-  border-top: 1px solid #ff724c;
-  border-left: 1px solid #ff724c;
+  border-top: 1px solid #8B0000;
+  border-left: 1px solid #8B0000;
 }
 
 .event-date .event-icon i {
@@ -1293,7 +1293,7 @@ ul.social-links li:last-child a {
 }
 
 .skill-percentage {
-  background-color: #ff724c;
+  background-color: #8B0000;
   border: 1px solid #fff;
   height: 10px;
   padding: 0;
@@ -1387,7 +1387,7 @@ ul.social-links li:last-child a {
 
 .portfolio-filters li.active a,
 .portfolio-filters li.active a:hover {
-  background-color: #ff724c;
+  background-color: #8B0000;
   color: #fff;
 }
 
@@ -1448,7 +1448,7 @@ ul.social-links li:last-child a {
 }
 
 .portfolio-grid figure a div i {
-  color: #ff724c;
+  color: #8B0000;
   position: absolute;
   font-size: 24px;
   bottom: 14px;
@@ -1507,7 +1507,7 @@ ul.social-links li:last-child a {
 .contact-info-block .pe-7s-icon {
   position: relative;
   font-size: 30px;
-  color: #ff724c;
+  color: #8B0000;
 }
 /* /Contact info */
 
@@ -1541,7 +1541,7 @@ ul.social-links li:last-child a {
 .testimonials.owl-carousel .owl-nav .owl-prev:hover,
 .testimonials.owl-carousel .owl-nav .owl-next:hover {
   color: #fff;
-  background-color: #ff724c;
+  background-color: #8B0000;
 }
 
 .testimonials.owl-carousel .owl-nav .owl-prev:before,
@@ -1710,7 +1710,7 @@ ul.social-links li:last-child a {
 }
 
 .ajax-page-nav > div.nav-item a:hover {
-  color: #ff724c;
+  color: #8B0000;
 }
 
 .ajax-page-nav > div.nav-item a i {
@@ -1755,7 +1755,7 @@ ul.social-links li:last-child a {
 }
 
 .project-general-info .fa {
-  color: #ff724c;
+  color: #8B0000;
   margin-right: 5px;
 }
 
@@ -1781,7 +1781,7 @@ ul.social-links li:last-child a {
 
 .share-buttons a:hover {
   color: #fff;
-  background-color: #ff724c;
+  background-color: #8B0000;
   border-color: transparent;
 }
 
@@ -1825,7 +1825,7 @@ ul2 {
 
 ul2 li::before {
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #ff724c; /* Change the color */
+  color: #8B0000; /* Change the color */
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */ 
   width: 1em; /* Also needed for space (tweak if needed) */
@@ -2079,7 +2079,7 @@ ul2 li::before {
 }
 
 .template-style-dark .home-page-block h2 {
-  color: #ff724c;
+  color: #8B0000;
 }
 
 .template-style-dark .home-page-description {
@@ -2107,7 +2107,7 @@ ul2 li::before {
 
 .template-style-dark ul.social-links li a:hover {
     color: #fff;
-    background-color: #ff724c;
+    background-color: #8B0000;
     border-color: transparent;
 }
 
@@ -2166,7 +2166,7 @@ ul2 li::before {
 }
 
 .header.header-color-light .my-photo .border-block-bottom-40 {
-  border-color: #ff724c;
+  border-color: #8B0000;
 }
 
 .header.header-color-light .my-photo img {
@@ -2174,7 +2174,7 @@ ul2 li::before {
 }
 
 .header.header-color-light .site-title {
-  color: #ff724c;
+  color: #8B0000;
 }
 
 .header.header-color-light .site-main-menu li a,
@@ -2185,11 +2185,11 @@ ul2 li::before {
 
 .header.header-color-light .site-main-menu li a i,
 .header.header-color-light .site-main-menu li a:hover i {
-  color: #ff724c;
+  color: #8B0000;
 }
 
 .header.header-color-light .site-main-menu li.active a:after {
-  background-color: #ff724c;
+  background-color: #8B0000;
 }
 /* Header Light Color BG */
 
@@ -2199,7 +2199,7 @@ ul2 li::before {
 }
 
 .header.header-color-dark .my-photo .border-block-bottom-40 {
-  border-color: #ff724c;
+  border-color: #8B0000;
 }
 /* /Header Dark Color */
 
@@ -2221,7 +2221,7 @@ ul2 li::before {
   text-align: center; /* Centered text */
   border-radius: 2px; /* Rounded borders */
   font-family: 'Oxygen', Helvetica, sans-serif;
-
+  font-size: 13px;
   padding:5px; /* Padding */
   position: fixed; /* Sit on top of the screen */
   z-index: 1; /* Add a z-index if needed */

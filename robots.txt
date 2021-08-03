@@ -1,0 +1,5 @@
+
+User-Agent: *
+Disallow: /CV.pdf
+Disallow:/docs/*
+Disallow: /*.pdf

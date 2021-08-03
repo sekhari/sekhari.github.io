@@ -1,1 +1,9 @@
-ErrorDocument 404 /404.html
+RewriteEngine On
+RewriteRule   ^images/ - [R=404,L]
+RewriteRule   ^js/ - [R=404,L]
+RewriteRule   ^docs/ - [R=404,L]
+RewriteRule   ^css/ - [R=404,L]
+RewriteRule   ^fonts/ - [R=404,L]
+
+ErrorDocument 404 404.html
+ErrorDocument 403 404.html

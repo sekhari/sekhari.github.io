@@ -2201,6 +2201,11 @@ ul2 li::before {
 .header.header-color-dark .my-photo .border-block-bottom-40 {
   border-color: #8B0000;
 }
+
+.justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
 /* /Header Dark Color */
 
 /* Header Main Color BG */

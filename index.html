@@ -7,128 +7,157 @@
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="stylesheets/index_bar.css">
+    <link rel="stylesheet" href="stylesheets/extra.css">
+
     <meta name="viewport" content="width=device-width">
+	
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script src="javascripts/toggle.js"></script>
   </head>
   <body> 
-    <div class="wrapper">
+
+
+	<div class="topnav" >
+		<div style="padding-left: 10%;"> 
+		<a href="#Home" onclick="toggleSection('home')">Ayush Sekhari</a> 
+		</div>
+		
+		<div>
+		<!-- <a href="javascript:void(0);" onclick="toggleSection('home')">Home</a> -->
+		<div class="topnav_large_menu" style="padding-left: 65%;"> 
+		<a href="#Publications" onclick="toggleSection('publications')">Publications</a>
+		<a href="#Teaching" onclick="toggleSection('teaching')">Teaching</a>
+		<a href="#Service" onclick="toggleSection('service')">Service</a>
+		</div> 
+
+		<div class="topnav_small_menu"><p onclick="toggleDropdown()">Links</p>
+			<div id="dropdown" class="dropdown">
+				<a href="#Publications" onclick="toggleSection('publications')">Publications</a>
+				<a href="#Teaching" onclick="toggleSection('teaching')">Teaching</a>
+				<a href="#Service" onclick="toggleSection('service')">Service</a>
+			</div>
+		</div>
+	</div>
+	</div>
+	
+	<br> 
+
+	<div class="wrapper">
+		<div>
       <header>
       	<br>
 
-      	<img src="me.jpg" id="me" alt="Ayush Sekhari" style='border-radius: 50%'/>
+      	<img src="me.jpg" id="me" alt="Ayush Sekhari" style='border-radius: 100%;' display= "inline-block;"/>
       	<br>        <br>
               	        <h1 align='center'>Ayush Sekhari</h1>
 
-<hr>
+			<hr>
           <h2>Contact Details</h2>
         <p> <strong>Email:</strong> sekhari [at] mit [dot] edu <br>
-         <strong>Office:</strong> 481, Institute for Data, Systems, and Society (IDSS), 50 Ames St, Cambridge, MA  - 02142</p>
+         <!-- <strong>Office:</strong> 481, Institute for Data, Systems, and Society (IDSS), 50 Ames St, Cambridge, MA  - 02142</p>--> 
          <hr>
 
       </header>
+	  </div>
 
 
- <section>
+<div>
+ <section> 
+
+
+
+		<section id="home">
  				<!-- <h2>Teaching  </h2> 
       	<hr> --> 
       	<div style="text-align:justify">
         <p> 
 
-         I am a postdoctoral assosicate at MIT working with <a \href="http://www.mit.edu/~rakhlin/"> Prof. Sasha Rakhlin</a>. I am interested in all theoretical aspects of Machine Learning. Recently, I have been working on <strong> high-dimensional stochastic optimization</strong>, and <strong> reinforcement learning (RL)</strong>. 
+         I am a postdoctoral assosicate at MIT working with <a \href="http://www.mit.edu/~rakhlin/" target="_blank"> Prof. Sasha Rakhlin</a>. I am interested in all theoretical aspects of Machine Learning. Recently, I have been working on <strong> high-dimensional stochastic optimization</strong>, and <strong> reinforcement learning (RL)</strong>. 
 
          <br><br>
 
-         I completed my Ph.D. in <a href="https://www.cs.cornell.edu/%20target=" _blank'="">Computer Science </a> at <a href="https://www.cornell.edu/" target="_blank"> Cornell University</a>, where I was fortunate to be advised by <a href="https://www.cs.cornell.edu/~sridharan/" target="_blank"> Prof. Karthik Sridharan </a> and <a href="http://www.cs.cornell.edu/~rdk/" target="_blank"> Prof. Robert D. Kleinberg</a>. Prior to Cornell, I completed my undergraduate education from <a href="https://iitk.ac.in/" target="_blank"> Indian Institute of Techonology Kanpur (IIT Kanpur), India</a>, and after that, spent a year at Google Research as a part of the <a href="https://ai.google/research/join-us/ai-residency/" target="_blank"> Brain Residency program </a> (now called AI Residency). </p>
-	   
-    <center>
-	  <strong>PhD Thesis:</strong> <a href="https://ecommons.cornell.edu/handle/1813/112975">Non-convex and Interactive Learning via Stochastic Optimization</a>
-		</center>
+         I completed my Ph.D. in <a href="https://www.cs.cornell.edu/" target="_blank=">Computer Science </a> at <a href="https://www.cornell.edu/" target="_blank"> Cornell University</a>, where I was fortunate to be advised by <a href="https://www.cs.cornell.edu/~sridharan/" target="_blank"> Prof. Karthik Sridharan </a> and <a href="http://www.cs.cornell.edu/~rdk/" target="_blank"> Prof. Robert D. Kleinberg</a>. Prior to Cornell, I completed my undergraduate education from <a href="https://iitk.ac.in/" target="_blank"> Indian Institute of Techonology Kanpur (IIT Kanpur), India</a>, and after that, spent a year at Google Research as a part of the <a href="https://ai.google/research/join-us/ai-residency/" target="_blank"> Brain Residency program </a> (now called AI Residency). </p>
 
-	  <br><br>
+				    <center>
+					  <strong>PhD Thesis:</strong> <a href="https://ecommons.cornell.edu/handle/1813/112975" target="_blank">Non-convex and Interactive Learning via Stochastic Optimization</a>
+						</center>
 
-		</div>
+					  <br><br>
 
-	    <div style="text-align:justify">
-		<h2>Recent News</h2>
+						</div>
 
-	    <ul style="width:600px">
-	    <li> <font color="red"> Update: </font> I have moved to MIT. Let us chat if you are in the area!</li> 
-	    <li> <font color="red"> New Papers: </font> 5 new papers accepted at NeurIPS. See you in New Orleans!</li> 
-	    <li> <font color="red"> New Papers: </font>  Two <a href="https://arxiv.org/abs/2307.04998">new</a> <a href="https://arxiv.org/abs/2307.12926"> papers</a> on interactive learning with active querying for expert feedback up on arXiv.</li> Would love to chat together if this direction interests you! 
-	   
-	    <li> <font color="red"> New Paper: </font>  <a href="https://arxiv.org/abs/2306.15744">New paper</a> on ticketed learning-unlearning schemes up on arXiv.</li>
-	    </ul> 
-	    </div> 
+					    <div style="text-align:justify">
+						<h2>Recent News</h2>
 
-	    <!-- <div>
-	    <h2>Preprints</h2>
+					    <ul>
+					    <li> <font color="red"> Two new papers </font> Reinforcement Learning accepted at ICLR 2024. Looking forward to the conference in Vienna. </li> 
+					    <li>  I have moved to MIT. Let us chat if you are in the area!</li> 
+					    <li>  5 new papers accepted at NeurIPS. See you in New Orleans!</li> 
+					    <li>  Two papers on interactive learning with active querying for expert feedback up on arXiv.</li> Would love to chat together if this direction interests you! 
+					   
+					    <li> New paper on ticketed learning-unlearning schemes up on arXiv.</li> 
+					    </ul> 
+					    </div> 
 
-	    <ol>
+		</section> 
 
 
-	    <li> <p> <a href="https://arxiv.org/abs/2005.03789"> <strong> Reinforcement Learning with Feedback Graphs</strong></a>
-	        <br> Christoph Dann, Yishay Mansour, Mehryar Mohri, Ayush Sekhari, Karthik Sridharan
-	    </p>
-	    </li>
-	    </ol>
-	    </div> -->
-
-
-
-	    <div >
-	    <!-- 	
-	    <h2>Preprints</h2>
-
-	    <ol>
-
-	    	 ADD things here
-
-	    </ol>
-			-->
-
-	    <div >
+   <section id="publications">
+	    <div > 
 	    <h2>Publications</h2>
 
-	    <ul>
+	    <ul> 
+	   	<li> <p> <strong> <a href="https://arxiv.org/abs/2401.09681" target="_blank">Harnessing Density Ratios for Online Reinforcement Learning</a> </strong>
+	        <br> with Philip Amortila, Dylan J. Foster, Nan Jiang, and Tengyang Xie    
+					<br> <strong>ICLR 2024.</strong> <font color="red">  (Spotlight) </font>
+	        </p>
+	    </li> 
 
-	   	<li> <p> <strong> <a href="https://arxiv.org/pdf/2310.06113.pdf">When is Agnostic Reinforcement Learning Statistically Tractable? </a> </strong>
+	    <li> <p> <strong> <a href="https://arxiv.org/abs/2311.08384" target="_blank">Offline Data Enhanced On-Policy Policy Gradient with Provable Guarantees </a> </strong>
+	        <br> with Yifei Zhou, Yuda Song, and Wen Sun
+	        <br> <strong>ICLR 2024.</strong>
+	        </p>
+	    </li>
+
+	   	<li> <p> <strong> <a href="https://arxiv.org/pdf/2310.06113.pdf" target="_blank">When is Agnostic Reinforcement Learning Statistically Tractable? </a> </strong>
 	        <br> with Zeyu Jia, Gene Li, Nati Srebro and Alexander Rakhlin    
 					<br> <strong>NeurIPS 2023.</strong>
 	        </p>
 	    </li>
 
-	   	<li> <p> <strong> <a href="https://arxiv.org/abs/2307.04998">Selective Sampling and Imitation Learning via Online Regression</a> </strong>
+	   	<li> <p> <strong> <a href="https://arxiv.org/abs/2307.04998" target="_blank">Selective Sampling and Imitation Learning via Online Regression</a> </strong>
 	        <br> with Karthik Sridharan, Wen Sun, and Runzhe Wu 
 					<br> <strong>NeurIPS 2023.</strong>
-	        <br> Short version also appeared at <a href="https://interactive-learning-implicit-feedback.github.io/">Interactive Learning with Implicit Human Feedback workshop</a> at ICML 2023.  
+	        <br> Short version also appeared at <a href="https://interactive-learning-implicit-feedback.github.io/" target="_blank">Interactive Learning with Implicit Human Feedback workshop</a> at ICML 2023.  
 	        </p>
 	    </li>
 	   	
-	   	<li> <p> <strong> <a href="https://arxiv.org/abs/2307.12926">Contextual Bandits and Imitation Learning via Preference-Based Active Queries</a> </strong>
+	   	<li> <p> <strong> <a href="https://arxiv.org/abs/2307.12926" target="_blank">Contextual Bandits and Imitation Learning via Preference-Based Active Queries</a> </strong>
 	        <br> with Karthik Sridharan, Wen Sun, and Runzhe Wu 
 	        <br> <strong>NeurIPS 2023.</strong>
-	        <br>  Short version also appeared at <a href="https://interactive-learning-implicit-feedback.github.io/">Interactive Learning with Implicit Human Feedback workshop</a>, and <a href="https://sites.google.com/view/mfpl-icml-2023">The Many Facets of Preference-Based Learning workshop</a> at ICML 2023.  
+	        <br>  Short version also appeared at <a href="https://interactive-learning-implicit-feedback.github.io/" target="_blank">Interactive Learning with Implicit Human Feedback workshop</a>, and <a href="https://sites.google.com/view/mfpl-icml-2023" target="_blank">The Many Facets of Preference-Based Learning workshop</a> at ICML 2023.  
  
 	        </p>
 	    </li>
 	   	
 
-	    <li> <p> <strong> <a href="https://arxiv.org/abs/2212.10717">Hidden Poison: Machine Unlearning Enables Camouflaged Poisoning Attacks</a> </strong>
+	    <li> <p> <strong> <a href="https://arxiv.org/abs/2212.10717" target="_blank">Hidden Poison: Machine Unlearning Enables Camouflaged Poisoning Attacks</a> </strong>
 	        <br> Jimmy Z. Di, Jack Douglas, Jayadev Acharya, Gautam Kamath, Ayush Sekhari 
 	        	        <br> <strong>NeurIPS 2023.</strong>
 	        </p>
 	    </li>
 	   	
-	   	<li> <p> <strong> <a href="https://arxiv.org/abs/2211.14250">Model-Free Reinforcement Learning with the Decision-Estimation Coefficient</a> </strong>
+	   	<li> <p> <strong> <a href="https://arxiv.org/abs/2211.14250" target="_blank">Model-Free Reinforcement Learning with the Decision-Estimation Coefficient</a> </strong>
 	        <br> Dylan J. Foster, Noah Golowich, Jian Qian, Alexander Rakhlin, Ayush Sekhari 
 	        <br> <strong>NeurIPS 2023.</strong> 
 	        </p>
 	    </li>
 
 
-	   	<li> <p> <strong> <a href="https://arxiv.org/abs/2306.15744">Ticketed Learning-Unlearning Schemes</a> </strong>
+	   	<li> <p> <strong> <a href="https://arxiv.org/abs/2306.15744" target="_blank">Ticketed Learning-Unlearning Schemes</a> </strong>
 	        <br> with Badih Ghazi, Pritish Kamath, Ravi Kumar, Pasin Manurangsi, and Chiyuan Zhang
 	        <br> <strong>COLT 2023</strong> 
 	        <br> Short version at Symposium on the Foundations of Responsible Computing, FORC 2023.  
@@ -136,52 +165,52 @@
 	    </li>
 
 
-	   	<li> <p> <strong> <a href="https://arxiv.org/abs/2206.12081">Computationally Efficient PAC RL in POMDPs with Latent Determinism and Conditional Embeddings</a> </strong>
+	   	<li> <p> <strong> <a href="https://arxiv.org/abs/2206.12081" target="_blank">Computationally Efficient PAC RL in POMDPs with Latent Determinism and Conditional Embeddings</a> </strong>
 	        <br> with Masatoshi Uehara, Jason D. Lee, Nathan Kallus, Wen Sun. 
           <br> <strong>ICML 2023.</strong> 
 	    </p>
 	    </li>
 
-	    <li> <p> <strong> <a href="https://arxiv.org/abs/2210.06718">Hybrid RL: Using Both Offline and Online Data Can Make RL Efficient</a> </strong>
+	    <li> <p> <strong> <a href="https://arxiv.org/abs/2210.06718" target="_blank">Hybrid RL: Using Both Offline and Online Data Can Make RL Efficient</a> </strong>
 	        <br> with Yuda Song, Yifei Zhou, J. Andrew Bagnell, Akshay Krishnamurthy, Wen Sun. 
 	        <br> <strong>ICLR 2023.</strong> 
 	        </p>
 	    </li>
 
 
-	    <li> <p> <strong> <a href="https://arxiv.org/abs/2210.06705">  From Gradient Flow on Population Loss to Learning with Stochastic Gradient Descent</a> </strong>
+	    <li> <p> <strong> <a href="https://arxiv.org/abs/2210.06705" target="_blank">  From Gradient Flow on Population Loss to Learning with Stochastic Gradient Descent</a> </strong>
 	        <br> with Satyen Kale, Jason D. Lee, Chris De Sa and Karthik Sridharan.
 	        <br> <strong>NeurIPS 2022.</strong>
 	    </p>
 	    </li>
 
-	    <li> <p> <strong> <a href="https://arxiv.org/abs/2206.13063">  On the Complexity of Adversarial Decision Making</a> </strong>
+	    <li> <p> <strong> <a href="https://arxiv.org/abs/2206.13063" target="_blank">  On the Complexity of Adversarial Decision Making</a> </strong>
 	        <br> with Dylan J. Foster, Alexander Rakhlin and Karthik Sridharan. 
 	        <br> <strong>NeurIPS 2022.</strong> <font color="red">  (Oral) </font>
 	    </p>
 	    </li>
 
 
-	    <li> <p> <strong> <a href="https://arxiv.org/abs/2206.12020">  Provably Efficient Reinforcement Learning in Partially Observable Dynamical Systems</a> </strong>
+	    <li> <p> <strong> <a href="https://arxiv.org/abs/2206.12020" target="_blank">  Provably Efficient Reinforcement Learning in Partially Observable Dynamical Systems</a> </strong>
 	        <br> with Masatoshi Uehara, Jason D. Lee, Nathan Kallus, Wen Sun. 
 	        <br> <strong>NeurIPS 2022.</strong>
 	    </p>
 	    </li> 
 
-	    <li> <p> <strong> <a href="https://arxiv.org/abs/2206.09421">  Guarantees for Epsilon-Greedy Reinforcement Learning with Function Approximation</a> </strong>
+	    <li> <p> <strong> <a href="https://arxiv.org/abs/2206.09421" target="_blank">  Guarantees for Epsilon-Greedy Reinforcement Learning with Function Approximation</a> </strong>
 	        <br> with Christoph Dann, Yishay Mansour, Mehryar Mohri, and Karthik Sridharan. 
 	        <br> <strong>ICML 2022 </strong>. Short version at <a href='https://rldm.org/'>RLDM 2022</a> - Reinforcement Learning and Decision Making conference.
 	   </a> 
 	    </p>
 	    </li>
 
-	    <li> <p> <strong> <a href="https://arxiv.org/abs/2107.05074">  SGD: The role of Implicit Regularization, Batch-size and Multiple Epochs</a> </strong>
+	    <li> <p> <strong> <a href="https://arxiv.org/abs/2107.05074" target="_blank">  SGD: The role of Implicit Regularization, Batch-size and Multiple Epochs</a> </strong>
 	        <br> with  Satyen Kale and Karthik Sridharan.
 	        <br> <strong>NeurIPS 2021</strong>. 
 	    </p>
 	    </li> 
 
-	    <li> <p> <strong>  <a href="https://arxiv.org/abs/2106.11519"> Agnostic Reinforcement Learning with Low-Rank MDPs and Rich Observations</a></strong>
+	    <li> <p> <strong>  <a href="https://arxiv.org/abs/2106.11519" target="_blank"> Agnostic Reinforcement Learning with Low-Rank MDPs and Rich Observations</a></strong>
 	        <br> with Christoph Dann, Yishay Mansour, Mehryar Mohri, and Karthik Sridharan. 
 	        <br> <strong>NeurIPS 2021</strong>. <font color="red">  (Spotlight) </font>
 	   </a> 
@@ -189,47 +218,47 @@
 	    </li>
 
 
-	    <li> <p> <strong> <a href="https://arxiv.org/abs/2103.03279">  Remember What You Want to Forget: Algorithms for Machine Unlearning </a></strong>
+	    <li> <p> <strong> <a href="https://arxiv.org/abs/2103.03279" target="_blank">  Remember What You Want to Forget: Algorithms for Machine Unlearning </a></strong>
 	        <br> with  Jayadev Acharya, Gautam Kamath, and Ananda Theertha Suresh. 
 	        <br> <strong>NeurIPS 2021</strong>. Short version at <a href='https://tpdp.journalprivacyconfidentiality.org/2021/'> TPDP 2021 </a>- Theory and Practice of Differential Privacy.
 	    </p>
 	    </li> 
 
 
-	   	<li> <p> <strong>  <a href="https://arxiv.org/abs/2106.03243"> Neural Active Learning with Performance Guarantees </a></strong>
+	   	<li> <p> <strong>  <a href="https://arxiv.org/abs/2106.03243" target="_blank"> Neural Active Learning with Performance Guarantees </a></strong>
 	        <br> with Pranjal Awasthi, Christoph Dann, Claudio Gentile, and Zhilei Wang.
 	        <br> <strong>NeurIPS 2021</strong>. 
 	      </a> 
 	    </p>
 	    </li> 
 
-	    <li> <p> <strong>  <a href="https://arxiv.org/abs/2005.03789"> Reinforcement Learning with Feedback Graphs</a></strong>
+	    <li> <p> <strong>  <a href="https://arxiv.org/abs/2005.03789" target="_blank"> Reinforcement Learning with Feedback Graphs</a></strong>
 	        <br> with Christoph Dann, Yishay Mansour, Mehryar Mohri, and Karthik Sridharan
 	        <br>  <strong>NeurIPS 2020</strong>. Short version at <a href='https://sites.google.com/view/icml2018nonconvex/'> ICML 2020 Theoretical Foundations of RL workshop. </a> 
 	    </p>
 	    </li>
 
 
-	    <li> <p> <strong>  <a href='https://arxiv.org/abs/2006.13476'> Second-Order Information in Non-Convex Stochastic Optimization: Power and Limitations</a></strong>
+	    <li> <p> <strong>  <a href='https://arxiv.org/abs/2006.13476' target="_blank"> Second-Order Information in Non-Convex Stochastic Optimization: Power and Limitations</a></strong>
 	        <br> with Yossi Arjevani, Yair Carmon, John C Duchi, Dylan J Foster and Karthik Sridharan 
 	    	<br> <strong>COLT 2020</strong>. Honorable mention for best talk award at <a href="https://www.nyas.org/events/2020/14th-annual-machine-learning-symposium/">NYAS ML symposium 2020</a>.
 	    </p>
 	    </li>
 	    
-	    <li> <p> <strong>  <a href='https://arxiv.org/abs/1902.04686'> The Complexity of Making the Gradient Small in Stochastic Convex Optimization</a></strong>
+	    <li> <p> <strong>  <a href='https://arxiv.org/abs/1902.04686' target="_blank"> The Complexity of Making the Gradient Small in Stochastic Convex Optimization</a></strong>
 	        <br> with Dylan Foster, Ohad Shamir, Nathan Srebro, Karthik Sridharan and Blake Woodworth 
 	    	<br> <strong>COLT 2019</strong>. <font color="red">  (Best Student Paper Award). </font>
 	    </p>
 	    </li>
 
-	    <li> <p> <strong> <a href='https://arxiv.org/abs/1810.11059'>  Uniform Convergence of Gradients for Non-Convex Learning and Optimization</a></strong>
+	    <li> <p> <strong> <a href='https://arxiv.org/abs/1810.11059' target="_blank">  Uniform Convergence of Gradients for Non-Convex Learning and Optimization</a></strong>
 	        <br> with Dylan Foster and Karthik Sridharan
-	        <br>  <strong>NeurIPS 2018</strong>. Short version at <a href='https://sites.google.com/view/icml2018nonconvex/'> ICML 2018 Nonconvex Optimization workshop. </a> </p>
+	        <br>  <strong>NeurIPS 2018</strong>. Short version at <a href='https://sites.google.com/view/icml2018nonconvex/' target="_blank"> ICML 2018 Nonconvex Optimization workshop. </a> </p>
 	    </li>
 
-	    <li> <p> <strong>  <a href='https://arxiv.org/abs/1707.03979'> A Brief Study of in-domain Transfer and Learning from Fewer Samples using a Few Simple Priors </a></strong>
+	    <li> <p> <strong>  <a href='https://arxiv.org/abs/1707.03979' target="_blank"> A Brief Study of in-domain Transfer and Learning from Fewer Samples using a Few Simple Priors </a></strong>
 	        with Marc Pickett and James Davidson
-	        <br> ICML 2017 workshop: <a href="https://sites.google.com/site/rejectionactiveicml/">Picky Learners</a> - Choosing Alternative Ways to Process Data. 
+	        <br> ICML 2017 workshop: <a href="https://sites.google.com/site/rejectionactiveicml/" target="_blank">Picky Learners</a> - Choosing Alternative Ways to Process Data. 
 	        <br> Awarded the second best paper prize among the workshop submissions.</p>
 	    </li>
 
@@ -237,71 +266,30 @@
 	    </div>
 
 
-	  	<div >
-	    <!-- <h2>Preprints and Notes</h2>-->
+	  	<!-- <div >
 	    <h2>Preprints</h2> 
 	    <ul>
-			<li> <p> <strong> <a href="https://arxiv.org/abs/2311.08384">Offline Data Enhanced On-Policy Policy Gradient with Provable Guarantees </a> </strong>
+			<li> <p> <strong> <a href="https://arxiv.org/abs/2311.08384" target="_blank">Offline Data Enhanced On-Policy Policy Gradient with Provable Guarantees </a> </strong>
 	        <br> with Yifei Zhou, Yuda Song, and Wen Sun
 	        </p>
 	    </li>
 	   	</ul> 
-		  </div> 
+		  </div>  --> 
 
 	    <div>
     	<h2>Work Experience</h2>
-	    <ul style="list-style:none;">
+	    <ul style="list-style:none;"> 
 	    <li>Google Brain Residency Program, CA </li>
 	    </ul>
 
 	    </div>
 
-	    <div>
-    	<h2>Professional activities</h2>
-	    <ul style="list-style:none;">
-	    <li><strong>Organization</strong> 
-			<ul>
-	    <li><a href="https://upml2022.github.io/">Updatable Machine Learning</a> workshop at ICML 2022 (with <a href="https://people.ece.cornell.edu/acharya/">Prof. Jayadev Acharya</a> and <a href="http://www.gautamkamath.com/">Prof. Gautam Kamath</a>)</li></li>
-	    </ul>
-	  	</li>
-	    <li><strong>Reviewing</strong> 
-			<ul>
-	    <li><strong>Journals:</strong> Journal of Complexity 2021, JMLR (2020-22)
-	    </li>
-	    <li><strong>Conferences:</strong> COLT (2019-22), NeurIPS (2019-22), ALT (2020-22), ICLR 2019, AISTATS 2019, ICML (2019-21), ISIT 2020, ITCS 2020, FORC 2021
-	    </li>
-	    <!--<li><strong>Workshops</strong> 
-	    </li>--> 
-	    </ul>
-	  	</li>
-	    </ul> 
-	    </div>
 
-
-	    <div>
-	    <h2>Teaching</h2>
-	    <ul>
-	    <li> <p> <a href='http://www.cs.cornell.edu/courses/cs6783/2018fa/' target="_blank">Machine Learning Theory</a> - Fall 2018 (Graduate Level Course)
-	        <br> Prof. Karthik Sridharan, Cornell University
-
-	    </li>
-	    
-	    <li> <p> <a href='http://www.cs.cornell.edu/courses/cs4820/2018sp/' target="_blank">Introduction to Analysis of Algorithms</a> - Spring 2018
-	        <br> Prof. Robert Kleinberg, Cornell University
-	    </li>
-
-	    <li> <p> <a href='http://www.cs.cornell.edu/courses/cs4786/2017fa/' target="_blank">Machine Learning for Data Science</a> - Fall 2017
-	        <br> Prof. Karthik Sridharan, Cornell University
-	    </li>
-	        
-	    </ul>
-
-	    </div>
-
+	  </section>
 	    <!-- <div>
 	    <h2>Other</h2>
 	    <ul>
-	    <li> <p> I try to follow a <a href="https://thankful2plants.com/what-is-wfpb/"> whole food plant based</a>diet. I am very grateful to <a href="https://gurmeet.net/">Gurmeet Manku</a> for introducing me to this food system. Hit me up if you would like to learn more.</p>
+	    <li> <p> I try to follow a <a href="https://thankful2plants.com/what-is-wfpb/" target="_blank"> whole food plant based</a>diet. I am very grateful to <a href="https://gurmeet.net/" target="_blank">Gurmeet Manku</a> for introducing me to this food system. Hit me up if you would like to learn more.</p>
 	    </li>
 	    <li> I love climbing, I am new to it but it is awesome! Let us climb together? 
 	    </li>
@@ -309,10 +297,61 @@
 
 	    </div> -->
 
-      </section>
+
+
+   <section id="teaching">
+		    <div>
+		    <h2>Teaching Assistant at Cornell University</h2> 
+		    <ul>
+		    <li> <p> <a href='http://www.cs.cornell.edu/courses/cs6783/2018fa/' target="_blank">Machine Learning Theory</a> - Fall 2018 (Graduate Level Course)
+		        <br> Under Prof. Karthik Sridharan, Cornell University
+
+		    </li>
+		    
+		    <li> <p> <a href='http://www.cs.cornell.edu/courses/cs4820/2018sp/' target="_blank">Introduction to Analysis of Algorithms</a> - Spring 2018
+		        <br> Under Prof. Robert Kleinberg, Cornell University
+		    </li>
+
+		    <li> <p> <a href='http://www.cs.cornell.edu/courses/cs4786/2017fa/' target="_blank">Machine Learning for Data Science</a> - Fall 2017
+		        <br> Under Prof. Karthik Sridharan, Cornell University 
+		    </li>		        
+		    </ul>
+
+		    </div>
+
+   </section>
+
+  <section id="service">
+		<div>
+			<h2>Professional activities</h2>
+			<ul style="list-style:none;">
+			<li><strong>Organization</strong> 
+				<ul>
+			<li><a href="https://upml2022.github.io/" target="_blank">Updatable Machine Learning</a> workshop at ICML 2022 (with <a href="https://people.ece.cornell.edu/acharya/" target="_blank">Prof. Jayadev Acharya</a> and <a href="http://www.gautamkamath.com/" target="_blank">Prof. Gautam Kamath</a>)</li></li>
+			</ul>
+			  </li>
+			<li><strong>Reviewing</strong> 
+				<ul>
+			<li><strong>Journals:</strong> Journal of Complexity 2021, JMLR (2020-22)
+			</li>
+			<li><strong>Conferences:</strong> COLT (2019-22), NeurIPS (2019-22), ALT (2020-22), ICLR 2019, AISTATS 2019, ICML (2019-21), ISIT 2020, ITCS 2020, FORC 2021
+			</li>
+			<!--<li><strong>Workshops</strong> 
+			</li>--> 
+			</ul>
+			  </li>
+			</ul> 
+			</div>
+
+	</section>
+
+
+</section>
+</div>
+<!-- 
       <footer>
         <p><small>Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer> 
+      </footer>  -->
     </div>
     <script src="javascripts/scale.fix.js"></script>
   </body>

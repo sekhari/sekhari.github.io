@@ -71,9 +71,6 @@
               <a class="pt-trigger" href="#home" data-animation="17"><i class="menu-icon pe-7s-icon pe-7s-id"></i>Home</a>
             </li>
             <li>
-              <a class="pt-trigger" href="docs/CV_Ayush_sekhari.pdf"><i class="menu-icon pe-7s-icon pe-7s-science"></i>CV</a>
-            </li> 
-            <li>
               <a class="pt-trigger" href="#Publications" data-animation="19"><i class="menu-icon pe-7s-icon pe-7s-science"></i>Publications</a>
             </li>
             <li>
@@ -127,9 +124,19 @@
                     <div class="my-photo-block tilt-effect">
                       <img src="images/photo.png" alt="">
                     </div>
+                    <p align=center>
+                      <a href="docs/CV_Ayush_sekhari.pdf">CV</a> |
+                      <a href="bio.txt" target="_blank">Bio</a> |
+                      <a href="https://scholar.google.com/citations?user=AEsPCAUAAAAJ">Google Scholar</a> <br/>
+                      <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2019/EECS-2019-132.pdf" target="_blank">Phd Thesis</a> |
+                      <a href="https://github.com/pathak22">Github</a> |
+                      <a href="https://twitter.com/pathak2206">Twitter</a> <br/>
+                      <p align=center style="margin-top:-8px;" ><a href="https://twitter.com/pathak2206?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @pathak2206</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+                      </p>
                   </div>
 
-                  <div class="col-sm-6 col-md-6 col-lg-4">
+                  <!-- <div class="col-sm-6 col-md-6 col-lg-4"> -->
+                    <div>
                     <div class="justify">
 
                    
@@ -155,8 +162,31 @@
               <li> I will be an area chair for <a href="http://algorithmiclearningtheory.org/alt2025/"> Algorithmic Learning Theory (ALT) 2025</a>.</li>
               <!--  <font color="red"> Two new papers </font> Reinforcement Learning accepted at ICLR 2024. Looking forward to the conference in Vienna. </li> -->
               </ul> 
-
-
+              
+              <!-- Toggle Button -->
+              <button id="toggle-old-news" onclick="toggleOldNews()">Show Old News</button>
+              
+              <!-- Old News Items -->
+              <ul id="old-news" style="display: none;">
+                <li>Reinforcement Learning paper accepted at ICLR 2024. Looking forward to the conference in Vienna.</li>
+                <li>Previous participation at <a href="#">Algorithmic Learning Theory (ALT) 2024</a>.</li>
+              </ul>
+              
+              <script>
+                function toggleOldNews() {
+                  var oldNews = document.getElementById("old-news");
+                  var toggleButton = document.getElementById("toggle-old-news");
+                  
+                  if (oldNews.style.display === "none") {
+                    oldNews.style.display = "block";
+                    toggleButton.innerHTML = "Hide Old News";
+                  } else {
+                    oldNews.style.display = "none";
+                    toggleButton.innerHTML = "Show Old News";
+                  }
+                }
+              </script>
+              
               <br>
               <br>
             </section>
@@ -185,11 +215,55 @@
                                 <br> with Zeyu Jia, Alexander Rakhlin and Chen-Yu Wei     
                                 <br> <strong>COLT 2024.</strong> 
                                 </p>
+                                <a class="text-button"
+                                  href="https://www.nature.com/articles/s41467-024-47221-8">paper</a>
+                                <a class="text-button3"
+                                  href="https://www.nytimes.com/2024/05/07/science/whale-song-alphabet.html">The New York Times</a>
+                                <a class="text-button3"
+                                  href="https://www.nationalgeographic.com/premium/article/sperm-whales-alphabet-communication">National Geographic</a>
+                                <a class="text-button3"
+                                  href="https://www.nytimes.com/2024/05/24/podcasts/the-daily/whales-song.html">The Daily Podcast</a>
+                                <a class="text-button3"
+                                  href="https://www.washingtonpost.com/science/2024/05/07/sperm-whale-alphabet-clicks/">Washington Post</a>
+                                <a class="text-button3"
+                                  href="https://www.science.org/content/article/could-newly-discovered-sperm-whale-alphabet-be-deciphered-humans">Science Magazine</a>
+                                <a class="text-button3"
+                                  href="https://news.mit.edu/2024/csail-ceti-explores-sperm-whale-alphabet-0507">MIT News</a>
+                                <a class="text-button3"
+                                  href="https://www.nbcnews.com/science/science-news/scientists-document-remarkable-sperm-whale-phonetic-alphabet-rcna151337">BBC</a>
+                                <a class="text-button3"
+                                  href="https://techcrunch.com/2024/05/07/machine-learning-aids-in-discovery-of-sperm-whale-alphabet/?guccounter=1">TechCrunch</a>
+                                <a class="text-button3"
+                                  href="https://apnews.com/article/sperm-whale-language-talk-clicks-a94df8e07b129f19917437fcb85e7655">AP News</a>
+                                <a class="text-button3"
+                                  href="https://www.reuters.com/science/scientists-document-remarkable-sperm-whale-phonetic-alphabet-2024-05-07/">Reuters</a>
+                                <a class="text-button3"
+                                  href="https://www.npr.org/2024/05/07/1249546255/sperm-whale-communication-ai-language">NPR</a>
+                                <a href="https://github.com/pratyushasharma/sw-combinatoriality" class="icon">
+                                  <i class="fa fa-github w3-hover-opacity"></i></a>
+                              </p>
                             </li> 
 
                             <li> <p> <strong> <a href="https://arxiv.org/abs/2401.09681" target="_blank">Harnessing Density Ratios for Online Reinforcement Learning</a> </strong>
                                 <br> with Philip Amortila, Dylan J. Foster, Nan Jiang, and Tengyang Xie    
-                                <br> <strong>ICLR 2024.</strong> <font color="red">  (Spotlight) </font>
+                                <br> <strong>ICLR 2024.</strong> <font color="red">  (Spotlight) </font>       
+                                <div class="paper" id="dash">
+                                  <a href="https://dash-through-interaction.github.io/">webpage</a> |
+                                  <a href="javascript:toggleblock('dash_abs')">abstract</a> |
+                                  <a shape="rect" href="javascript:togglebib('dash')" class="togglebib">bibtex</a> |
+                                  <a href="https://arxiv.org/abs/2306.04784">arXiv</a>
+                            
+                                  <p align="justify"> <i style="display: none;" id="dash_abs">Modeling and simulating soft robot hands can aid in design iteration for complex and high degree-of-freedom (DoF) morphologies. This can be further supplemented by iterating on the design based on its performance in real world manipulation tasks. However, iterating in the real world requires a framework that allows us to test new designs quickly at low costs. In this paper, we present a framework that leverages rapid prototyping of the hand using 3D-printing, and utilizes teleoperation to evaluate the hand in real world manipulation tasks. Using this framework, we design a 3D-printed 16-DoF dexterous anthropomorphic soft hand (DASH) and iteratively improve its design over five iterations. Rapid prototyping techniques such as 3D-printing allow us to directly evaluate the fabricated hand without modeling it in simulation. We show that the design improves over five design iterations through evaluating the handâ€™s performance in 30 real-world teleoperated manipulation tasks. Testing over 900 demonstrations shows that our final version of DASH can solve 19 of the 30 tasks compared to Allegro, a popular rigid hand in the market, which can only solve 7 tasks. We open-source our CAD models as well as the teleoperated dataset for further study.</i></p>
+                            
+                              <pre xml:space="preserve" style="display:none;">
+                              @article{mannam2023Dashhand,
+                              title={DASH: A Framework for Designing Anthropomorphic Soft Hands through Interaction},
+                              author={Mannam, Pragna* and Shaw, Kenneth* and Bauer, Dominik and Oh, Jean and Pathak, Deepak and Pollard, Nancy},
+                              journal= {IEEE Humanoids},
+                              year={2023}
+                              }
+                              </pre>
+                                  </div>
                                 </p>
                             </li> 
 

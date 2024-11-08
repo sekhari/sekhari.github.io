@@ -68,10 +68,13 @@
           <!-- Main menu -->
           <ul id="nav" class="site-main-menu">
             <li>
-              <a class="pt-trigger" href="#home" data-animation="17"><i class="menu-icon pe-7s-icon pe-7s-id"></i>Home</a>
+              <a class="pt-trigger" href="#home" data-animation="19"><i class="menu-icon pe-7s-icon pe-7s-id"></i>Home</a>
             </li>
             <li>
-              <a class="pt-trigger" href="#Publications" data-animation="19"><i class="menu-icon pe-7s-icon pe-7s-science"></i>Publications</a>
+              <a class="pt-trigger" href="#Publications" data-animation="19"><i class="menu-icon pe-7s-icon pe-7s-news-paper"></i>Publications</a>
+            </li>
+            <li>
+              <a class="pt-trigger" href="#InvitedTalks" data-animation="19"><i class="menu-icon pe-7s-icon pe-7s-video"></i>Invited Talks</a>
             </li>
             <li>
               <a class="pt-trigger" href="#Grad" data-animation="19"><i class="menu-icon pe-7s-icon pe-7s-study"></i>Teaching</a>
@@ -80,7 +83,7 @@
               <a class="pt-trigger" href="#Motivation" data-animation="19"><i class="menu-icon pe-7s-icon pe-7s-portfolio"></i>Service</a>
             </li>
             <li>
-              <a class="pt-trigger" href="#contact" data-animation="20"><i class="menu-icon pe-7s-icon pe-7s-mail"></i>Contact</a>
+              <a class="pt-trigger" href="#contact" data-animation="19"><i class="menu-icon pe-7s-icon pe-7s-mail"></i>Contact</a>
             </li>
           </ul>
           <!-- /Main menu --> 
@@ -109,7 +112,7 @@
           <div class="subpages">
 
             <!-- About Me Subpage -->
-            <section class="pt-page pt-page-2" data-id="home">
+            <section class="pt-page pt-page-4" data-id="home">
               <div class="border-block-top-110"></div>
               <div class="section-inner">
                 <div class="section-title-block">
@@ -121,7 +124,10 @@
 
                 <div class="row">
                   <div class="col-sm-6 col-md-6 col-lg-4 subpage-block">
-                  <img src="images/photo2.png" alt="">
+                  <!-- <div class="justify"> -->
+                    <div class="custom-image-container">
+                      <img src="images/photo2.png" alt="">
+                    </div>
                     <!-- <div class="my-photo-block tilt-effect">
                       <img src="images/photo2.png" alt="">
                     </div> -->
@@ -134,7 +140,6 @@
                   </div>
 
                   <!-- <div class="col-sm-6 col-md-6 col-lg-4"> -->
-                    <div>
                     <div class="justify">
 
                    
@@ -145,7 +150,6 @@
          I completed my Ph.D. in <a href="https://www.cs.cornell.edu/" target="_blank=">Computer Science </a> at <a href="https://www.cornell.edu/" target="_blank"> Cornell University</a>, where I had the incredible fortune of working with <a href="https://www.cs.cornell.edu/~sridharan/" target="_blank"> Prof. Karthik Sridharan </a> and <a href="http://www.cs.cornell.edu/~rdk/" target="_blank"> Prof. Robert D. Kleinberg</a>. Prior to Cornell, I completed my undergraduate education from <a href="https://iitk.ac.in/" target="_blank"> Indian Institute of Techonology Kanpur (IIT Kanpur), India</a>, and after that, spent a year at Google Research as a part of the <a href="https://ai.google/research/join-us/ai-residency/" target="_blank"> Brain Residency program </a> (now called AI Residency). </p>
 
                     </div>
-                  </div>
 
                 </div>
   
@@ -187,279 +191,76 @@
               
               <br>
               <br>
+              <img src="images/image_in_bottom.jpg">
             </section>
 
             <!-- Publications subpage -->
-                        <!-- Grad School Subpage -->
-                        <section class="pt-page pt-page-4" data-id="Publications">
-                          <div class="border-block-top-110"></div>
-                          <div class="section-inner">
-                            <div class="section-title-block">
-                              <div class="section-title-wrapper">
-                                <h2 class="section-title">Publications and Preprints</h2>
-                                <!-- <h5 class="section-description">Advise?</h5> -->
-                              </div>
-                            </div>
-                              
-                              <div class="block-title">
-                              <h2>Publications</h2>
-                            </div>
+            <!-- Grad School Subpage -->
+            <section class="pt-page pt-page-4" data-id="Publications">
+              <div class="border-block-top-110"></div>
+              <div class="section-inner">
+                <div class="section-title-block">
+                  <div class="section-title-wrapper">
+                    <h2 class="section-title">Publications and Preprints</h2>
+                    <!-- <h5 class="section-description">Advise?</h5> -->
+                  </div>
+                </div>
+                  
+              <div class="block-title">
+                <h2>Publications</h2>
+              </div>
 
-                          <div>    
-                          <ul> 
+              <div id="publications-container">
+                <!-- Content from publications.html will be loaded here -->
+              </div>
+              
+              <script>
+                // Fetch the content from publications.html and insert it into the div
+                fetch('publications.html')
+                  .then(response => {
+                    if (!response.ok) {
+                      throw new Error('Network response was not ok');
+                    }
+                    return response.text();
+                  })
+                  .then(data => {
+                    document.getElementById('publications-container').innerHTML = data;
+                  })
+                  .catch(error => console.error('Error loading the file:', error));
+              </script>        
+            </section>
 
+            <!-- /Portfolio Subpage -->
+            <section class="pt-page pt-page-4" data-id="InvitedTalks">
+              <div class="border-block-top-110"></div>
+              <div class="section-inner">
+                <div class="section-title-block">
+                  <div class="section-title-wrapper">
+                    <h2 class="section-title">Invited Talks</h2>
+                    <!-- <h5 class="section-description">I love teaching!</h5>  -->
+                  </div>
+                </div>
+                  
+                  <div class="block-title">
+                  <div>
+                    <h2>Teaching Assistant at Cornell University</h2> 
+                    <ul> 
+                    <li> <p> <a href='http://www.cs.cornell.edu/courses/cs6783/2018fa/' target="_blank">Machine Learning Theory</a> - Fall 2018 (Graduate Level Course)
+                        <br> Under Prof. Karthik Sridharan, Cornell University
 
-                            <li> <p> <strong> <a href="https://arxiv.org/abs/2403.17091" target="_blank">Offline Reinforcement Learning: Role of State Aggregation and Trajectory Data</a> </strong>
-                                <br> with Zeyu Jia, Alexander Rakhlin and Chen-Yu Wei     
-                                <br> <strong>COLT 2024.</strong> 
-                                </p>
-                                <!-- <a class="text-button"
-                                  href="https://www.nature.com/articles/s41467-024-47221-8">paper</a>
-                                <a class="text-button3"
-                                  href="https://www.nytimes.com/2024/05/07/science/whale-song-alphabet.html">The New York Times</a>
-                                <a class="text-button3"
-                                  href="https://www.nationalgeographic.com/premium/article/sperm-whales-alphabet-communication">National Geographic</a>
-                                <a class="text-button3"
-                                  href="https://www.nytimes.com/2024/05/24/podcasts/the-daily/whales-song.html">The Daily Podcast</a>
-                                <a class="text-button3"
-                                  href="https://www.washingtonpost.com/science/2024/05/07/sperm-whale-alphabet-clicks/">Washington Post</a>
-                                <a class="text-button3"
-                                  href="https://www.science.org/content/article/could-newly-discovered-sperm-whale-alphabet-be-deciphered-humans">Science Magazine</a>
-                                <a class="text-button3"
-                                  href="https://news.mit.edu/2024/csail-ceti-explores-sperm-whale-alphabet-0507">MIT News</a>
-                                <a class="text-button3"
-                                  href="https://www.nbcnews.com/science/science-news/scientists-document-remarkable-sperm-whale-phonetic-alphabet-rcna151337">BBC</a>
-                                <a class="text-button3"
-                                  href="https://techcrunch.com/2024/05/07/machine-learning-aids-in-discovery-of-sperm-whale-alphabet/?guccounter=1">TechCrunch</a>
-                                <a class="text-button3"
-                                  href="https://apnews.com/article/sperm-whale-language-talk-clicks-a94df8e07b129f19917437fcb85e7655">AP News</a>
-                                <a class="text-button3"
-                                  href="https://www.reuters.com/science/scientists-document-remarkable-sperm-whale-phonetic-alphabet-2024-05-07/">Reuters</a>
-                                <a class="text-button3"
-                                  href="https://www.npr.org/2024/05/07/1249546255/sperm-whale-communication-ai-language">NPR</a>
-                                <a href="https://github.com/pratyushasharma/sw-combinatoriality" class="icon">
-                                  <i class="fa fa-github w3-hover-opacity"></i></a> -->
-                              </p>
-                            </li> 
+                    </li>
+                    
+                    <li> <p> <a href='http://www.cs.cornell.edu/courses/cs4820/2018sp/' target="_blank">Introduction to Analysis of Algorithms</a> - Spring 2018
+                        <br> Under Prof. Robert Kleinberg, Cornell University
+                    </li>
 
-                            <li> <p> <strong> <a href="https://arxiv.org/abs/2401.09681" target="_blank">Harnessing Density Ratios for Online Reinforcement Learning</a> </strong>
-                                <br> with Philip Amortila, Dylan J. Foster, Nan Jiang, and Tengyang Xie    
-                                <br> <strong>ICLR 2024.</strong> <font color="red">  (Spotlight) </font>       
-                                <!-- UCOMMENT HERE <div class="paper" id="dash">
-                                  <a href="https://dash-through-interaction.github.io/">webpage</a> |
-                                  <a href="javascript:toggleblock('dash_abs')">abstract</a> |
-                                  <a shape="rect" href="javascript:togglebib('dash')" class="togglebib">bibtex</a> |
-                                  <a href="https://arxiv.org/abs/2306.04784">arXiv</a>
-                            
-                                  <p align="justify"> <i style="display: none;" id="dash_abs">Modeling and simulating soft robot hands can aid in design iteration for complex and high degree-of-freedom (DoF) morphologies. This can be further supplemented by iterating on the design based on its performance in real world manipulation tasks. However, iterating in the real world requires a framework that allows us to test new designs quickly at low costs. In this paper, we present a framework that leverages rapid prototyping of the hand using 3D-printing, and utilizes teleoperation to evaluate the hand in real world manipulation tasks. Using this framework, we design a 3D-printed 16-DoF dexterous anthropomorphic soft hand (DASH) and iteratively improve its design over five iterations. Rapid prototyping techniques such as 3D-printing allow us to directly evaluate the fabricated hand without modeling it in simulation. We show that the design improves over five design iterations through evaluating the handâ€™s performance in 30 real-world teleoperated manipulation tasks. Testing over 900 demonstrations shows that our final version of DASH can solve 19 of the 30 tasks compared to Allegro, a popular rigid hand in the market, which can only solve 7 tasks. We open-source our CAD models as well as the teleoperated dataset for further study.</i></p>
-                            
-                              <pre xml:space="preserve" style="display:none;">
-                              @article{mannam2023Dashhand,
-                              title={DASH: A Framework for Designing Anthropomorphic Soft Hands through Interaction},
-                              author={Mannam, Pragna* and Shaw, Kenneth* and Bauer, Dominik and Oh, Jean and Pathak, Deepak and Pollard, Nancy},
-                              journal= {IEEE Humanoids},
-                              year={2023}
-                              }
-                              </pre>
-                              </div> -->
+                    <li> <p> <a href='http://www.cs.cornell.edu/courses/cs4786/2017fa/' target="_blank">Machine Learning for Data Science</a> - Fall 2017
+                        <br> Under Prof. Karthik Sridharan, Cornell University 
+                    </li>           
+                    </ul>
 
-                                </p>
-                            </li> 
-
-                              <li> <p> <strong> <a href="https://arxiv.org/abs/2311.08384" target="_blank">Offline Data Enhanced On-Policy Policy Gradient with Provable Guarantees </a> </strong>
-          <br> with Yifei Zhou, Yuda Song, and Wen Sun
-          <br> <strong>ICLR 2024.</strong>
-          </p>
-      </li>
-
-      <li> <p> <strong> <a href="https://arxiv.org/pdf/2310.06113.pdf" target="_blank">When is Agnostic Reinforcement Learning Statistically Tractable? </a> </strong>
-          <br> with Zeyu Jia, Gene Li, Nati Srebro and Alexander Rakhlin    
-          <br> <strong>NeurIPS 2023.</strong>
-          </p>
-      </li>
-
-      <li> <p> <strong> <a href="https://arxiv.org/abs/2307.04998" target="_blank">Selective Sampling and Imitation Learning via Online Regression</a> </strong>
-          <br> with Karthik Sridharan, Wen Sun, and Runzhe Wu 
-          <br> <strong>NeurIPS 2023.</strong>
-          <br> Short version also appeared at <a href="https://interactive-learning-implicit-feedback.github.io/" target="_blank">Interactive Learning with Implicit Human Feedback workshop</a> at ICML 2023.  
-          </p>
-      </li>
-      
-      <li> <p> <strong> <a href="https://arxiv.org/abs/2307.12926" target="_blank">Contextual Bandits and Imitation Learning via Preference-Based Active Queries</a> </strong>
-          <br> with Karthik Sridharan, Wen Sun, and Runzhe Wu 
-          <br> <strong>NeurIPS 2023.</strong>
-          <br>  Short version also appeared at <a href="https://interactive-learning-implicit-feedback.github.io/" target="_blank">Interactive Learning with Implicit Human Feedback workshop</a>, and <a href="https://sites.google.com/view/mfpl-icml-2023" target="_blank">The Many Facets of Preference-Based Learning workshop</a> at ICML 2023.  
- 
-          </p>
-      </li>
-      
-
-      <li> <p> <strong> <a href="https://arxiv.org/abs/2212.10717" target="_blank">Hidden Poison: Machine Unlearning Enables Camouflaged Poisoning Attacks</a> </strong>
-          <br> Jimmy Z. Di, Jack Douglas, Jayadev Acharya, Gautam Kamath, Ayush Sekhari 
-                    <br> <strong>NeurIPS 2023.</strong>
-          </p>
-      </li>
-      
-      <li> <p> <strong> <a href="https://arxiv.org/abs/2211.14250" target="_blank">Model-Free Reinforcement Learning with the Decision-Estimation Coefficient</a> </strong>
-          <br> Dylan J. Foster, Noah Golowich, Jian Qian, Alexander Rakhlin, Ayush Sekhari 
-          <br> <strong>NeurIPS 2023.</strong> 
-          </p>
-      </li>
-
-
-      <li> <p> <strong> <a href="https://arxiv.org/abs/2306.15744" target="_blank">Ticketed Learning-Unlearning Schemes</a> </strong>
-          <br> with Badih Ghazi, Pritish Kamath, Ravi Kumar, Pasin Manurangsi, and Chiyuan Zhang
-          <br> <strong>COLT 2023</strong> 
-          <br> Short version at Symposium on the Foundations of Responsible Computing, FORC 2023.  
-          </p>
-      </li>
-
-
-      <li> <p> <strong> <a href="https://arxiv.org/abs/2206.12081" target="_blank">Computationally Efficient PAC RL in POMDPs with Latent Determinism and Conditional Embeddings</a> </strong>
-          <br> with Masatoshi Uehara, Jason D. Lee, Nathan Kallus, Wen Sun. 
-          <br> <strong>ICML 2023.</strong> 
-      </p>
-      </li>
-
-      <li> <p> <strong> <a href="https://arxiv.org/abs/2210.06718" target="_blank">Hybrid RL: Using Both Offline and Online Data Can Make RL Efficient</a> </strong>
-          <br> with Yuda Song, Yifei Zhou, J. Andrew Bagnell, Akshay Krishnamurthy, Wen Sun. 
-          <br> <strong>ICLR 2023.</strong> 
-          </p>
-      </li>
-
-
-      <li> <p> <strong> <a href="https://arxiv.org/abs/2210.06705" target="_blank">  From Gradient Flow on Population Loss to Learning with Stochastic Gradient Descent</a> </strong>
-          <br> with Satyen Kale, Jason D. Lee, Chris De Sa and Karthik Sridharan.
-          <br> <strong>NeurIPS 2022.</strong>
-      </p>
-      </li>
-
-      <li> <p> <strong> <a href="https://arxiv.org/abs/2206.13063" target="_blank">  On the Complexity of Adversarial Decision Making</a> </strong>
-          <br> with Dylan J. Foster, Alexander Rakhlin and Karthik Sridharan. 
-          <br> <strong>NeurIPS 2022.</strong> <font color="red">  (Oral) </font>
-      </p>
-      </li>
-
-
-      <li> <p> <strong> <a href="https://arxiv.org/abs/2206.12020" target="_blank">  Provably Efficient Reinforcement Learning in Partially Observable Dynamical Systems</a> </strong>
-          <br> with Masatoshi Uehara, Jason D. Lee, Nathan Kallus, Wen Sun. 
-          <br> <strong>NeurIPS 2022.</strong>
-      </p>
-      </li> 
-
-      <li> <p> <strong> <a href="https://arxiv.org/abs/2206.09421" target="_blank">  Guarantees for Epsilon-Greedy Reinforcement Learning with Function Approximation</a> </strong>
-          <br> with Christoph Dann, Yishay Mansour, Mehryar Mohri, and Karthik Sridharan. 
-          <br> <strong>ICML 2022 </strong>. Short version at <a href='https://rldm.org/'>RLDM 2022</a> - Reinforcement Learning and Decision Making conference.
-     </a> 
-      </p>
-      </li>
-
-      <li> <p> <strong> <a href="https://arxiv.org/abs/2107.05074" target="_blank">  SGD: The role of Implicit Regularization, Batch-size and Multiple Epochs</a> </strong>
-          <br> with  Satyen Kale and Karthik Sridharan.
-          <br> <strong>NeurIPS 2021</strong>. 
-      </p>
-      </li> 
-
-      <li> <p> <strong>  <a href="https://arxiv.org/abs/2106.11519" target="_blank"> Agnostic Reinforcement Learning with Low-Rank MDPs and Rich Observations</a></strong>
-          <br> with Christoph Dann, Yishay Mansour, Mehryar Mohri, and Karthik Sridharan. 
-          <br> <strong>NeurIPS 2021</strong>. <font color="red">  (Spotlight) </font>
-     </a> 
-      </p>
-      </li>
-
-
-      <li> <p> <strong> <a href="https://arxiv.org/abs/2103.03279" target="_blank">  Remember What You Want to Forget: Algorithms for Machine Unlearning </a></strong>
-          <br> with  Jayadev Acharya, Gautam Kamath, and Ananda Theertha Suresh. 
-          <br> <strong>NeurIPS 2021</strong>. Short version at <a href='https://tpdp.journalprivacyconfidentiality.org/2021/'> TPDP 2021 </a>- Theory and Practice of Differential Privacy.
-      </p>
-      </li> 
-
-
-      <li> <p> <strong>  <a href="https://arxiv.org/abs/2106.03243" target="_blank"> Neural Active Learning with Performance Guarantees </a></strong>
-          <br> with Pranjal Awasthi, Christoph Dann, Claudio Gentile, and Zhilei Wang.
-          <br> <strong>NeurIPS 2021</strong>. 
-        </a> 
-      </p>
-      </li> 
-
-      <li> <p> <strong>  <a href="https://arxiv.org/abs/2005.03789" target="_blank"> Reinforcement Learning with Feedback Graphs</a></strong>
-          <br> with Christoph Dann, Yishay Mansour, Mehryar Mohri, and Karthik Sridharan
-          <br>  <strong>NeurIPS 2020</strong>. Short version at <a href='https://sites.google.com/view/icml2018nonconvex/'> ICML 2020 Theoretical Foundations of RL workshop. </a> 
-      </p>
-      </li>
-
-
-      <li> <p> <strong>  <a href='https://arxiv.org/abs/2006.13476' target="_blank"> Second-Order Information in Non-Convex Stochastic Optimization: Power and Limitations</a></strong>
-          <br> with Yossi Arjevani, Yair Carmon, John C Duchi, Dylan J Foster and Karthik Sridharan 
-        <br> <strong>COLT 2020</strong>. Honorable mention for best talk award at <a href="https://www.nyas.org/events/2020/14th-annual-machine-learning-symposium/">NYAS ML symposium 2020</a>.
-      </p>
-      </li>
-      
-      <li> <p> <strong>  <a href='https://arxiv.org/abs/1902.04686' target="_blank"> The Complexity of Making the Gradient Small in Stochastic Convex Optimization</a></strong>
-          <br> with Dylan Foster, Ohad Shamir, Nathan Srebro, Karthik Sridharan and Blake Woodworth 
-        <br> <strong>COLT 2019</strong>. <font color="red">  (Best Student Paper Award). </font>
-      </p>
-      </li>
-
-      <li> <p> <strong> <a href='https://arxiv.org/abs/1810.11059' target="_blank">  Uniform Convergence of Gradients for Non-Convex Learning and Optimization</a></strong>
-          <br> with Dylan Foster and Karthik Sridharan
-          <br>  <strong>NeurIPS 2018</strong>. Short version at <a href='https://sites.google.com/view/icml2018nonconvex/' target="_blank"> ICML 2018 Nonconvex Optimization workshop. </a> </p>
-      </li>
-
-      <li> <p> <strong>  <a href='https://arxiv.org/abs/1707.03979' target="_blank"> A Brief Study of in-domain Transfer and Learning from Fewer Samples using a Few Simple Priors </a></strong>
-          with Marc Pickett and James Davidson
-          <br> ICML 2017 workshop: <a href="https://sites.google.com/site/rejectionactiveicml/" target="_blank">Picky Learners</a> - Choosing Alternative Ways to Process Data. 
-          <br> Awarded the second best paper prize among the workshop submissions.</p>
-      </li>
-
-      </ul>
-      </div>
-    
-
-           <div >
-      <h2>Preprints / Under Submission</h2>  
-      <ul>
-
-      <li> <p> <strong> <a href="" target="_blank">The Space Complexity of Learning-Unlearning Algorithms</a> </strong>
-          <br> Yeshwanth Cherapanamjeri, Sumegha Garg, Nived Rajaraman, Ayush Sekhari, Abhishek Shetty
-          <br> <strong>(Under Submission)</strong> 
-          </p>
-      </li> 
-
-
-      <li> <p> <strong> <a href="https://arxiv.org/abs/2407.04264" target="_blank">Langevin Dynamics: A Unified Perspective on Optimization via Lyapunov Potentials</a> </strong>
-          <br> August Y. Chen, Ayush Sekhari, Karthik Sridharan 
-          <br> <strong>(Under Submission)</strong> 
-          </p>
-      </li> 
-
-      <li> <p> <strong> <a href="https://arxiv.org/abs/2406.17216" target="_blank">Machine Unlearning Fails to Remove Data Poisoning Attacks</a> </strong>
-          <br> Martin Pawelczyk, Jimmy Z. Di, Yiwei Lu, Gautam Kamath*, Ayush Sekhari*, Seth Neel* (*-equal advising)  
-          <br> Preliminary version at <href a="https://icml.cc/virtual/2024/workshop/29958">Generative AI and Law Workshop</href> (GenLaw'24) at ICML 2024.  <font color="red"> (Spotlight) </font>
-          <br> <strong>(Under Submission)</strong> 
-          </p>
-      </li> 
-
-
-      <li> <p> <strong> <a href="https://arxiv.org/abs/2406.11810" target="_blank">Computationally Efficient RL under Linear Bellman Completeness for Deterministic Dynamics</a> </strong>
-          <br> with Runzhe Wu, Akshay Krishnamurthy and Wen Sun 
-          <br> <strong>(Under Submission)</strong> 
-          </p>
-      </li> 
-
-      <li> <p> <strong> <a href="https://arxiv.org/abs/2410.08074" target="_blank">Unstable Unlearning: The Hidden Risk of Concept Resurgence in Diffusion Models</a> </strong>
-          <br> Vinith M. Suriyakumar*, Rohan Alur*, Ayush Sekhari, Manish Raghavan, Ashia C. Wilson 
-          <br> <strong>(Under Submission)</strong> 
-          </p>
-      </li> 
-
-
-      </ul> 
-      </div> 
-
-
-                              
-                        </section>
+                    </div>
+            </section>
 
             <!-- Grad School Subpage -->
             <section class="pt-page pt-page-4" data-id="Grad">
@@ -554,10 +355,9 @@
       </div>
 
   </section>
-            <!-- /Portfolio Subpage -->
 
             <!-- Contact Subpage -->
-            <section class="pt-page pt-page-5" data-id="contact">
+            <section class="pt-page pt-page-4" data-id="contact">
               <div class="border-block-top-110"></div>
               <div class="section-inner">
                 <div class="section-title-block">

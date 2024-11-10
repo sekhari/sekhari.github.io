@@ -245,7 +245,7 @@
                 <h2>Invited Talks</h2> 
               </div>
 
-              <div id="publications-container">
+              <div id="InvitedTalks-container">
                 <!-- Content from publications.html will be loaded here -->
               </div>
               
@@ -259,7 +259,7 @@
                     return response.text();
                   })
                   .then(data => {
-                    document.getElementById('publications-container').innerHTML = data;
+                    document.getElementById('InvitedTalks-container').innerHTML = data;
                   })
                   .catch(error => console.error('Error loading the file:', error));
               </script>        

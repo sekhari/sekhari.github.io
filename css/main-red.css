@@ -2453,3 +2453,11 @@ ul2 li::before {
   from {bottom: 30px; opacity: 0.5;}
   to {bottom: 0; opacity: 0;}
 }
+
+.special-section-title {
+  color: black;    /* Blue color for the text */
+  text-align: center; /* Text is centered horizontally */
+  font-size: 28px;    /* Font size is 24 pixels */
+  padding-bottom: 15px; /* Adds 20 pixels of padding to the bottom */
+}
+

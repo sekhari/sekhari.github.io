@@ -230,14 +230,48 @@
               </script>        
             </section>
 
-            <!-- /Portfolio Subpage -->
+          <!-- Publications subpage -->
             <section class="pt-page pt-page-4" data-id="InvitedTalks">
               <div class="border-block-top-110"></div>
               <div class="section-inner">
                 <div class="section-title-block">
                   <div class="section-title-wrapper">
                     <h2 class="section-title">Invited Talks</h2>
-                    <!-- <h5 class="section-description">I love teaching!</h5>  -->
+                    <!-- <h5 class="section-description">Advise?</h5> -->
+                  </div>
+                </div>
+                  
+              <div class="block-title">
+                <h2>Publications</h2>
+              </div>
+
+              <div id="publications-container">
+                <!-- Content from publications.html will be loaded here -->
+              </div>
+              
+              <script>
+                // Fetch the content from publications.html and insert it into the div
+                fetch('talks.html') 
+                  .then(response => {
+                    if (!response.ok) {
+                      throw new Error('Network response was not ok');
+                    }
+                    return response.text();
+                  })
+                  .then(data => {
+                    document.getElementById('publications-container').innerHTML = data;
+                  })
+                  .catch(error => console.error('Error loading the file:', error));
+              </script>        
+            </section>
+
+            <!-- /Portfolio Subpage -->
+<!--             <section class="pt-page pt-page-4" data-id="InvitedTalks">
+              <div class="border-block-top-110"></div>
+              <div class="section-inner">
+                <div class="section-title-block">
+                  <div class="section-title-wrapper">
+                    <h2 class="section-title">Invited Talks</h2>
                   </div>
                 </div>
                   
@@ -260,7 +294,7 @@
                     </ul>
 
                     </div>
-            </section>
+            </section> -->
 
             <!-- Grad School Subpage -->
             <section class="pt-page pt-page-4" data-id="Grad">

@@ -1183,8 +1183,8 @@ ul.social-links li:last-child a {
 }
 
 .custom-image-container {
-  width: 100%; /* Makes the container take the full width of the parent */
-  height: 350px;
+  /* width: 100%; Makes the container take the full width of the parent */
+  /* height: 350px; */
   overflow: hidden; /* Ensures no overflow from the image */
   text-align: center;
 }

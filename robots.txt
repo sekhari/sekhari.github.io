@@ -1,7 +1,2 @@
-
 User-Agent: *
-Sitemap: https://sekhari.com/sitemap.xml
-Disallow: /CV.pdf
-Disallow:/docs/
-Disallow: /*.pdf$
-Disallow: /*.pdf
+Sitemap: https://ayush.sekhari.com/sitemap.xml

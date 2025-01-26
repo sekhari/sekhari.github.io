@@ -350,10 +350,10 @@ textarea.form-control, textarea.form-control:focus {
 .text-button {
 	display: inline-block;
 	height: 38px;
-	padding: 0 15px; /* #1772d0; */ 
-	color: black;
+	padding: 0 10px; /* #1772d0; */ 
+	color: white;
 	text-align: center;
-	font-size: 12px;
+	font-size: 13px;
 	font-weight: bold;
 	text-transform: uppercase;
 	line-height: 25px;
@@ -361,9 +361,9 @@ textarea.form-control, textarea.form-control:focus {
 	letter-spacing: .1rem;
 	text-decoration: none;
 	white-space: nowrap;
-	background-color: #fea798;
+	background-color: #EA4335;
 	/* border-radius: 4px; */
-	border: 1px solid #fea798;
+	border: 1px solid #EA4335;
 	cursor: pointer;
 	border-radius: 3px;
 	box-sizing: border-box;
@@ -446,10 +446,10 @@ background-color: rgb(249, 242, 232);
 .text-button3 {
 	display: inline-block;
 	height: 38px;
-	padding: 0 15px;
+	padding: 0 10px;
 	color: white;
 	text-align: center;
-	font-size: 12px;
+	font-size: 13px;
 	font-weight: bold;
 	text-transform: uppercase;
 	line-height: 25px;
@@ -458,13 +458,13 @@ background-color: rgb(249, 242, 232);
 	text-decoration: none;
 	white-space: nowrap;
   /* background-color: rgb(248, 250, 228); */
-background-color: rgb(60, 118, 145); 
+background-color: rgba(66, 134, 244, 0.8); 
 	/* border-radius: 4px; */
-	border: 0.5px solid rgb(60, 118, 145);;
+	border: 0.5px solid rgb(66, 133, 244, 0.8);;
 	cursor: pointer;
 	border-radius: 3px;
 	box-sizing: border-box;
-	margin-right: 3px;
+	margin-right: 5px;
 	margin-top: 10px;
 }
 

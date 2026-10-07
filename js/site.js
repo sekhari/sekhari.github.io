@@ -35,6 +35,12 @@
       });
   }
 
+  document.querySelectorAll(".scroll-cue").forEach(function (cue) {
+    cue.addEventListener("click", function () {
+      document.getElementById(cue.dataset.target).scrollIntoView({ behavior: "smooth" });
+    });
+  });
+
   load("publications.html", "publications-container");
   load("talks.html", "talks-container");
 })();

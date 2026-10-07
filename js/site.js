@@ -41,6 +41,21 @@
     });
   });
 
+  var root = document.documentElement;
+  var themeToggle = document.querySelector(".theme-toggle");
+
+  function applyTheme(theme) {
+    root.dataset.theme = theme;
+    themeToggle.textContent = theme === "light" ? "\u263E Dark mode" : "\u2600\uFE0E Light mode";
+  }
+
+  applyTheme(root.dataset.theme);
+  themeToggle.addEventListener("click", function () {
+    var next = root.dataset.theme === "light" ? "dark" : "light";
+    applyTheme(next);
+    try { localStorage.setItem("theme", next); } catch (e) {}
+  });
+
   load("publications.html", "publications-container");
   load("talks.html", "talks-container");
 })();

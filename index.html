@@ -18,6 +18,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/site.css">
+    <script>
+      (function () {
+        var theme;
+        try { theme = localStorage.getItem("theme"); } catch (e) {}
+        document.documentElement.dataset.theme = theme === "light" ? "light" : "dark";
+      })();
+    </script>
   </head>
 
   <body>
@@ -308,7 +315,8 @@
     </main>
 
     <footer class="site-footer">
-      &copy; Ayush Sekhari &middot; <a href="mailto:as3663@cornell.edu">as3663@cornell.edu</a>
+      <span>&copy; Ayush Sekhari &middot; <a href="mailto:as3663@cornell.edu">as3663@cornell.edu</a></span>
+      <button class="theme-toggle" type="button"></button>
     </footer>
 
     <script src="js/site.js"></script>

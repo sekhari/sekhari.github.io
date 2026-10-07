@@ -1,4 +1,30 @@
 :root {
+  --bg: #15181B;
+  --text: #E6E6E1;
+  --muted: #9AA0A6;
+  --blue: #7FB2D3;
+  --blue-dark: #A8CDE4;
+  --blue-gray: #8FA6B2;
+  --pale: #1F262B;
+  --rule: #2C3237;
+  --red: #E57373;
+  --red-rule: #4A2C2C;
+  --red-outline: rgba(229, 115, 115, 0.45);
+  --surface: #1B1F23;
+  --text-soft: #C4C7C5;
+  --strong: #fff;
+  --underline: #5A6066;
+  --on-accent: #12161A;
+  --header-bg: rgba(21, 24, 27, 0.9);
+  --shadow: rgba(0, 0, 0, 0.6);
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --page: 1100px;
+  --measure: 740px;
+  color-scheme: dark;
+}
+
+:root[data-theme="light"] {
   --bg: #FAFAF7;
   --text: #202124;
   --muted: #6B7280;
@@ -8,10 +34,16 @@
   --pale: #EEF4F6;
   --rule: #E4E4DE;
   --red: #B31B1B;
-  --serif: "Newsreader", Georgia, "Times New Roman", serif;
-  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  --page: 1100px;
-  --measure: 740px;
+  --red-rule: #EAD9D9;
+  --red-outline: rgba(179, 27, 27, 0.35);
+  --surface: #fff;
+  --text-soft: #3C4043;
+  --strong: #000;
+  --underline: #BDBDB5;
+  --on-accent: #fff;
+  --header-bg: rgba(250, 250, 247, 0.92);
+  --shadow: rgba(22, 62, 86, 0.5);
+  color-scheme: light;
 }
 
 *,
@@ -61,7 +93,7 @@ h1, h2, h3, h4 {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(250, 250, 247, 0.92);
+  background: var(--header-bg);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--rule);
@@ -178,10 +210,10 @@ main {
   height: 44px;
   padding: 0;
   color: var(--blue);
-  background: #fff;
+  background: var(--surface);
   border: 1px solid var(--rule);
   border-radius: 50%;
-  box-shadow: 0 6px 18px -10px rgba(22, 62, 86, 0.5);
+  box-shadow: 0 6px 18px -10px var(--shadow);
   cursor: pointer;
   animation: scroll-cue-bounce 2s ease-in-out infinite;
   transition: color 0.15s, border-color 0.15s;
@@ -332,7 +364,7 @@ main {
   font-family: var(--serif);
   font-size: 18px;
   line-height: 1.55;
-  color: #3C4043;
+  color: var(--text-soft);
 }
 
 .hero-links {
@@ -365,13 +397,13 @@ main {
 
 .button:hover {
   background: var(--blue);
-  color: #fff;
+  color: var(--on-accent);
   text-decoration: none;
 }
 
 .button.primary {
   background: var(--blue);
-  color: #fff;
+  color: var(--on-accent);
 }
 
 .button.primary:hover {
@@ -384,15 +416,15 @@ main {
   width: 190px;
   margin: 0 auto;
   border-radius: 50%;
-  border: 4px solid #fff;
+  border: 4px solid var(--surface);
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  box-shadow: 0 12px 30px -16px rgba(22, 62, 86, 0.5);
+  box-shadow: 0 12px 30px -16px var(--shadow);
 }
 
 .current-box.students-box {
-  background: #fff;
-  border: 1px solid #EAD9D9;
+  background: var(--surface);
+  border: 1px solid var(--red-rule);
   border-left: 3px solid var(--red);
 }
 
@@ -570,7 +602,7 @@ main {
   font-family: var(--serif);
   font-size: 19px;
   font-style: italic;
-  color: #3C4043;
+  color: var(--text-soft);
 }
 
 .note {
@@ -651,7 +683,7 @@ main {
 
 .pub-badge {
   color: var(--red);
-  border: 1px solid rgba(179, 27, 27, 0.35);
+  border: 1px solid var(--red-outline);
 }
 
 .pub-authors {
@@ -663,7 +695,7 @@ main {
 
 .pub-authors .me {
   font-weight: 600;
-  color: #000;
+  color: var(--strong);
 }
 
 .pub-note {
@@ -671,13 +703,13 @@ main {
   font-size: 14px;
   font-style: italic;
   line-height: 1.55;
-  color: #3C4043;
+  color: var(--text-soft);
 }
 
 .pub-note a {
   color: inherit;
   text-decoration: underline;
-  text-decoration-color: #BDBDB5;
+  text-decoration-color: var(--underline);
   text-underline-offset: 2px;
 }
 
@@ -707,7 +739,7 @@ main {
 .pub-links a {
   color: var(--text);
   text-decoration: underline;
-  text-decoration-color: #BDBDB5;
+  text-decoration-color: var(--underline);
   text-underline-offset: 3px;
 }
 
@@ -720,7 +752,7 @@ main {
   padding: 14px 18px;
   font-size: 14px;
   line-height: 1.6;
-  color: #3C4043;
+  color: var(--text-soft);
   background: var(--pale);
   border-radius: 3px;
 }
@@ -758,7 +790,7 @@ main {
   gap: 16px;
   padding: 3px 0 !important;
   font-size: 15px;
-  color: #3C4043;
+  color: var(--text-soft);
 }
 
 #talks-container ol li span {
@@ -794,9 +826,32 @@ main {
   max-width: var(--page);
   margin: 0 auto;
   padding: 28px 32px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
   font-size: 13px;
   color: var(--muted);
   border-top: 1px solid var(--rule);
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font: inherit;
+  font-weight: 500;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+
+.theme-toggle:hover {
+  border-color: var(--blue);
 }
 
 /* Responsive */
